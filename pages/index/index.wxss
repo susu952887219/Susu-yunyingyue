@@ -1,0 +1,109 @@
+/* pages/index/index.wxss */
+
+/* 轮播图区域 */
+.banners {
+  width: 100%;
+  height: 300rpx;
+}
+.banners image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 五个图标导航区域 */
+.navContainer {
+  display: flex;
+}
+.navContainer .navItem{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+.navContainer .navItem text{
+  font-size: 26rpx;
+}
+.navContainer .navItem .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background: rgb(240,19,19);
+  color: #fff;
+  font-size: 50rpx;
+  margin: 20rpx 0;
+}
+/* 推荐歌曲区域 */
+.recommendContainer {
+  padding: 20rpx;
+}
+/* 推荐内容区域 */
+.recommendScroll {
+  display: flex;
+  height: 300rpx;
+}
+.scrollItem{
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.scrollItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.scrollItem text{
+  font-size: 26rpx;
+  /* 单行文本隐藏隐藏，省略号代替*/
+  /* display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /* 多行文本隐藏隐藏，省略号代替*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /*设置对齐模式,纵向对齐*/
+  -webkit-line-clamp: 2; /* 设置多行行数*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 排行榜区域 */
+.topList {
+  padding: 20rpx;
+}
+.topListSwiper {
+  height: 420rpx;
+}
+.topListSwiper .swiperItem{
+  width: 96%;
+  background: #fbfbfb;
+}
+.topListSwiper .title{
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.topListSwiper .musicTop{
+  /*设置为flex布局之后，其item的display都会自动变成block*/
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.topListSwiper .musicTop image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+}
+.topListSwiper .musicTop .ranking{
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.topListSwiper .musicTop .musicName{
+  height: 100rpx;
+  line-height: 100rpx;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

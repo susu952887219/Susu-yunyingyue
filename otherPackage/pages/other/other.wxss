@@ -1,0 +1,2 @@
+/* 引入模板样式*/
+@import "/template/myTemplate/myTemplate.wxss"
